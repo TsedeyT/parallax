@@ -1,0 +1,81 @@
+body,html{
+	height: 100%;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: "Lato", sans-serif;
+	line-height: 1.8rem;
+	color: #666;
+}
+
+.banner-image, .body-image, .bottom-image{
+	position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.banner-image{
+
+	background-image: url('../image/nature-image1.jpg');
+	min-height: 100%;
+}
+
+
+.body-image{
+
+	background-image: url('../image/nature-image2.jpg');
+	min-height: 400px;
+	
+}
+
+.bottom-image{
+
+	background-image: url('../image/nature-image3.jpg');
+	min-height: 400px;
+	
+}
+
+section {
+    text-align: center;
+    padding: 50px 80px;
+}
+.section.bg-light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+.section.bg-dark {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.heading {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    color: #000;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+.heading .border {
+
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+
+}
+
+.heading .border-transparent {
+    background-color: transparent;
+}
+
+@media (max-width: 568px){
+	.banner-image, .body-image, .bottom-image{
+		background-attachment: scroll;
+	}
+}
